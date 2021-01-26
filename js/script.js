@@ -8,5 +8,6 @@ function Ticket(name, time, age) {
 }
 
 function changePrice(ticket) {
+  // price = 10 + a * {name} + b * {time} + c * {age}
 
 }
