@@ -23,3 +23,16 @@ Ticket.prototype.changePrice = function(ticket) {
   }
   return this.price;
 }
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    const name = $("input#name").val();
+    const time = parseInt($("input#time").val());
+    const age = parseInt($("input#age").val());
+    let newTicket = new Ticket(name, time, age);
+    const price = newTicket.changePrice();
+    $("#output").text("$" + price);
+    $("form")[0].reset();
+  });
+});
