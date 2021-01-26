@@ -7,7 +7,19 @@ function Ticket(name, time, age) {
   this.price = 10;
 }
 
-function changePrice(ticket) {
-  // price = 10 + a * {name} + b * {time} + c * {age}
+Ticket.prototype.changePrice = function(ticket) {
+  if (this.name === "Wonder Woman") {
+    this.price += 3;
+  }
+  if (this.time >= 17) {
+    this.price += 2;
+  }
+  if (this.age <= 10 && this.time <= 18) {
+    this.price = 5;
+  }
 
+  if (this.age >= 65) {
+    this.price = 7;
+  }
+  return this.price;
 }
