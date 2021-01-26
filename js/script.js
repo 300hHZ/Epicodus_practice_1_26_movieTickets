@@ -30,7 +30,7 @@ $(document).ready(function() {
   });
   $("form").submit(function(event) {
     event.preventDefault();
-    const name = $("input#name").val();
+    const name = $("#name").val();
     const time = parseInt($("input#time").val());
     const age = parseInt($("input#age").val());
     let newTicket = new Ticket(name, time, age);
