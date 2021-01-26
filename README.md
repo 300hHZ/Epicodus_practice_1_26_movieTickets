@@ -18,7 +18,7 @@ Clone repository by using this [URL](https://github.com/DanielAdeyemi/Epicodus_p
 * Bootstrap *v5.0.0 beta*
 
 ## *Known bugs:*
-This project has almost no style and was used only for practice purporse. Array of movies was hardcoded into the project(js file)
+This project has almost no style and was used only for practice purporse. Array of movies was hardcoded into the project(js file). Also time needs to be in military format with no minutes(5:00pm = 17)
 
 ## *License and copyright:*
 
