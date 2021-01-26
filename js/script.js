@@ -25,6 +25,9 @@ Ticket.prototype.changePrice = function(ticket) {
 }
 
 $(document).ready(function() {
+  movies.forEach(function(movie) {
+    $("#name").append(`<option value="${movie}">${movie}</option>`);
+  });
   $("form").submit(function(event) {
     event.preventDefault();
     const name = $("input#name").val();
